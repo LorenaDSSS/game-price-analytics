@@ -37,6 +37,13 @@ MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY")
 STEAM_API_URL = os.getenv("STEAM_API_URL")
 CHEAPSHARK_API_URL = os.getenv("CHEAPSHARK_API_URL")
 
+# =========================
+# Configurações HTTP
+# =========================
+
+HTTP_TIMEOUT = int(os.getenv("HTTP_TIMEOUT", 30))
+HTTP_RETRY = int(os.getenv("HTTP_RETRY", 3))
+
 # Uma observação importante
 
 # Esse código está funcionando, mas depois vamos melhorar.
